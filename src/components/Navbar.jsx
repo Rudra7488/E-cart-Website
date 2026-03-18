@@ -33,7 +33,7 @@ const Navbar = ({setData,cart}) => {
     <>
     <header className='sticky-top'>
         <div className="nav-bar">
-            <Link to={'/'} className="brand">E-Cart</Link>
+            <Link to={'/'} className="brand">E-Carts</Link>
 
             <form
             // onClick={handleSubmit} 
@@ -62,21 +62,21 @@ const Navbar = ({setData,cart}) => {
         {
           location.pathname == '/' && (
             <div className="nav-bar-wrapper">
-            <div className="items">Filter by {"->"}</div>
+            <div className="items">Filter by by {"->"}</div>
             <div 
             onClick={()=>setData(items)}
             className="items">No Filter</div>
             <div 
             onClick={()=>filterByCategory('mobiles')}
-             className="items">Mobiles</div>
+             className="items">Mobile</div>
             <div
             onClick={()=>filterByCategory('laptops')}
     
-             className="items">Laptops</div>
+             className="items">Laptop</div>
             <div
             onClick={()=>filterByCategory('tablets')}
     
-             className="items">Tablets</div>
+             className="items">Tablet</div>
             <div
             onClick={()=>filterByPrice(29999)}
             className="items">{">="}29999</div>
